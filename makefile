@@ -1,2 +1,5 @@
 all:
-	pdflatex exercise.tex
+	pdflatex report.tex
+
+count:
+	detex report.tex | wc
