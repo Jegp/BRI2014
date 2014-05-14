@@ -1,102 +1,137 @@
 \documentclass{article}
 
+\usepackage[utf8]{inputenc}
 \usepackage{natbib}
 \bibliographystyle{plainnat}
 \usepackage{url}
 \usepackage{nameref}
+\renewcommand{\baselinestretch}{1.3}
+\title{Bridging the gap: Understanding software through philosophy of science}
+\usepackage{pdfpages}
 
 \begin{document}
 
+\includepdf{frontpage1.pdf}
+
+\maketitle
+
+\tableofcontents
+
+\pagebreak
+
 \section{Introduction}
-In an old Danish sketch about a sailing raft on actor, actor \texttt{A}, tries to explain a theatrical scene to another actor, actor \texttt{B}. The sketch begins by \texttt{A} explaining how a scene with a raft ends in a humorous climax. \texttt{B} stops \texttt{A} in his storytelling to asks what a 'climax' means. Actor \texttt{A} explains (slightly annoyed) that a climax is as an abstract peak of events. \texttt{B} nods and repeats that the raft sketch contains an abstract mountain. \texttt{B} then asks what \textit{abstract} means and \texttt{A} (even more annoyed) explains that \textit{abstract} is something that is not there. The confusion is complete when \texttt{B} surely concludes that the raft scene contains a mountain that is not there. Needless to say, the conversation does not benefit either \texttt{A} or \texttt{B} \citep{Raft:2014}.
+In an old Danish sketch about a sailing raft, one actor, actor \texttt{A}, tries to explain a theatrical scene to another actor, actor \texttt{B}. \texttt{A} begins by explaining how a scene with a raft ends in a humorous climax. \texttt{B} stops \texttt{A} in his storytelling to ask what a `climax' means. Actor \texttt{A} explains (slightly annoyed) that a \textit{climax} is as an abstract peak of events. \texttt{B} nods and reiterates that the raft sketch contains an abstract mountain. 
+He then goes on to ask what `abstract' means. \texttt{A} (even more annoyed) explains that \textit{abstract} is something that is not there. The confusion is complete when \texttt{B} confidently concludes that the raft scene contains a mountain that is not there. Needless to say, \texttt{A} has a very hard time communicating with \texttt{B}, and the scene inevitably ends in total confusion \citep{Raft:2014}.
 
-This type of '\textit{raft-talk}' is not uncommon when experts in information systems (IS) encounters people who does not have the same understandings of information technology. One example is a debate between a Danish politician and a Danish blogger about the recent surveillance scandals \citep{Bramsen:2014}. The interview has been heavily debated on social media and has recently led to some aggressive outburst from the IS field [ibid.]. 
+This type of `\textit{raft-talk}' is not uncommon when experts in information technology (IT) encounters people who does not have the same understanding of the technology. And, assuming the gradual introduction of IT in the general society continues, it will most certainly not be the last. 
 
-It is not the first time the field of IS feels misunderstood % TODO: Find referencer
-and, assuming the gradual introduction of IS in the general society continues, it will most certainly not be the last.
-The question I would like to address in this essay is how the field of IS can be discussed by someone without expert knowledge:
-\begin{quote}
-How can the field of IS be approached by actors without expert knowledge within IS?
-\end{quote}
+The question on how to understand and incorporate sciences in the daily lives of the broader public, is highly relevant in our modern society. With information technology as an example, we see a rapid increase in the use of scientific and highly theoretical concepts, to fuel the growth of the information age and the rising demand for information from consumers. With these sometimes hasted implementations, vacuums of ethical considerations follows, because of unforeseen practical consequences \cite{Moor:1985} (further introduced in section \ref{Theory:Ethics}). 
+
+The question I would like to address in this essay concerns how philosophy of science might help us to understand information technology from an outside perspective. Or put in a more general way, how philosophy of science can provide methods to approach the scientific language of the IT field.
 
 To answer this question I have chosen two theoretical approaches: paradigms and computer ethics. 
-By using Wernick et al. and Thomas Kuhn's theory on paradigms \citep{Wernick:2004, Holm:2014}, I will examine if, and if is how, the field of software engineering (SE) and IS can be understood as incommensurable paradigms.
-By applying utilitarianism and Moore's text on 'computer ethics' \citep{Moor:1985}, I will discuss the above ideas and test if the 'old' non-digital society have any common grounds with the 'new' digital.
-To test these approaches I will use the debate between the blogger and the politician mentioned above as a practical case in the analyses. Lastly I will discuss the two analyses and outline methods for further studies.
+By using Wernick et al. and Thomas Kuhn's theory on paradigms \citep{Wernick:2004, Holm:2014}, I will examine if, and if is how, the field of software engineering (SE) can be understood as incommensurable paradigms.
+By applying utilitarianism and Moore's text on \textit{computer ethics} \citep{Moor:1985}, I will discuss the above ideas and test if the `old' non-digital society have any common grounds with the `new' digital.
+To test these approaches I will analyse a recent debate between a Danish politician and a Danish blogger about surveillance laws \citep{Bramsen:2014}. The interview has been heavily debated on social media and has recently led to some aggressive outburst from the many IT professionals [ibid.].
+
+Lastly I will discuss the two analyses and outline methods for further studies. My aim in this essay is not to conclude on the validity of either philosophical theories, but rather to examine how they can contribute to bringing IT into the `real world'.
 
 \section{Theory}
-In this section I will include the theory about paradigms from Thomas Kuhn, and utilitarianism from Bentham and Mill. Before moving on to the analysis I will define software engineering as a field, as seen in the light of Wernick et al. and Moor \citep{Wernick:2004, Moor:1985}.
+In this section I will define software engineering as a field, as seen in the light of Wernick et al. and Moor \citep{Wernick:2004, Moor:1985}. I will then include the theory on paradigms from Thomas Kuhn and basic utilitarianism from Bentham and Mill. For both theoretical traditions I will present theories that allow these philosophical ideas to be applied to SE. For paradigms I will present \cite{Wernick:2004} and for ethics I will use \cite{Moor:1985} and \cite{Floridi:1999}.
+
+\subsection{Software engineering as a field}
+Wernick et at. defines SE as ``the development of all software-based systems'' and consistently uses SE as a discipline and a scientific field \citep[p. 235-236]{Wernick:2004}. There are some disagreements on the existence of such a field \citep{Banville:1989, Floridi:1999}, but for the sake of simplicity I will use the same methodology as Wernick et al. In the discussion I will briefly address the consequences of SE as a more fragmented field.
 
 \subsection{Paradigms} \label{Theory:Paradigms}
 When examining how real sciences evolve, Kuhn introduced the idea of a \textit{paradigm} \citep[p. 59]{Holm:2014}. Kuhn defines a paradigm as achievements that is
 \begin{quote}
 ``sufficiently unprecedented to attract an enduring group of adherents away from competing modes of scientific activity ... [and] sufficiently open-ended to leave all sorts of problems for the ... practitioners to resolve'' \citep[p. 10-11]{Kuhn:2012}.
 \end{quote}
-A paradigm, then, is the new and unprecedented achievements, which opens up for novel understandings of scientific disciplines \citep[p. 61]{Holm:2014}. A set of ``rules, conventions, and common principles'' where a ``shared symbolic language'' and ``a number of scientific principles and basic laws'', makes up what Kuhn defines as a \textit{disciplinary matrix} (DM) [ibid.]. These rules are derived from the paradigm and exist to create methods of communication, so as to avoid situations like the raft sketch mentioned above \citep[p. 181]{Kuhn:2012}. As a result the ideas from two different paradigms becomes impossible to compare, since no facts can be shared directly between the two disciplinary matrices \citep[p. 66]{Holm:2014}. In other words they become incommensurable, where no one paradigm can be understood in the light of another, and where no paradigm can be said to be more `true' than the other, simply because there are no paradigm-independent (comparable) facts [ibid.].
+A paradigm, then, is the new and unprecedented achievements, which opens up for novel understandings of scientific disciplines \citep[p. 61]{Holm:2014}.
+A set of ``rules, conventions, and common principles'' where a ``shared symbolic language'' and ``a number of scientific principles and basic laws'', makes up what Kuhn defines as a \textit{disciplinary matrix} (DM) [ibid.]. These rules are derived from the paradigm and exist to create methods of communication, so as to avoid situations like the raft sketch mentioned above \citep[p. 181]{Kuhn:2012}. As a result the ideas from two different paradigms becomes impossible to compare, since no facts can be shared directly between the two disciplinary matrices \citep[p. 66]{Holm:2014}. In other words they become incommensurable, such that no one paradigm can be understood in the light of another, and where no paradigm can be said to be more `true' than the other, simply because there are no paradigm-independent (comparable) facts [ibid.].
 
-Apart from the DM paradigms also consist of \textit{exemplars}, which constitutes the ``fundamental examples of the validity of the paradigm'' [ibid., p. 62]. These examples exists to train practitioners in the methods and DM of the paradigm, thus defining and enforcing the rules and conventions for that paradigm. Holm mentions x-rays as an example, where the untrained eye is hard pressed to find small abnormalities [ibid.]. Kuhn would explain this by doctors having years of training within a certain DM, and thus a certain `assimilation' a certain way of seeing \citep[p. 189]{Kuhn:2012}.
+Apart from the DM, paradigms also consist of \textit{exemplars}, which constitutes the ``fundamental examples of the validity of the paradigm'' [ibid., p. 62]. These examples exists to train practitioners in the methods and DM of the paradigm, thus defining and enforcing the rules and conventions for that paradigm. Holm mentions x-ray images as an example: the untrained eye is hard pressed to find small abnormalities, but seasoned practitioners spot them almost instantly [ibid.]. Kuhn would explain this by doctors having years of training within a certain DM, and thus a certain `assimilation', a certain way of seeing \citep[p. 189]{Kuhn:2012}.
 
-\subsection{Ethics}
-Holm defines ethics and morals to include the ``unwritten rules that regulate our coexistence with other people'' [ibid., p.205]. Ethics can be seen as the implied rules we have been taught to judge what is \textit{right} and what is \textit{wrong}.
-
-I have chosen utilitarianism as the main ethical theory because it is sufficiently simple and 'fair' in treating both sides of an argument. Further, it is able to cover a large part of the arguments I wish to bring into this essay. There are, however, some caveats, as I will discuss in section \ref{Discussion}.
-
-\subsubsection{Utilitarianism}
-To act rational as a autonomous actor can be defined as chosing the \textit{best} option out of several, that gives the actor most of what he or she wants \footnote{By this definition 'wanting' is subjective to the actor.} \citep[p. 232]{Gilje:2007}. Utilitarianism extends this model and states that rational actors will always seek to maximise the utility for the people involved, given the available knowledge \citep[p. 232]{Holm:2014, Gilje:2007}. Maximising happiness (as an example of a utility) can then be seen as an ethical 'guideline', where
-\begin{quote}
-``the action that is morally right is the one that results in the greatest possible utility'' \citep[p. 207]{Holm:2014}.
-\end{quote}
-
-%Copyright and software ownership can be considered as 
-
-\section{Analysis}
-Having outlined the theoretical framework, I will now apply the theories on the concepts I motivated in the introduction. 
-To begin with I will attempt to understand why these difficulties in communication to and from IS related topics occurs. By including Wernick I will account for the position on SE as one or more paradigms, and the implication for the general understanding of SE for the surrounding world.
-In the second part of the analysis I will use Moor to outline the concept of computer ethics and examine its consequences the general understanding of SE.
-
-\subsection{SE as a paradigm}
+\subsubsection{SE as a paradigm}
 Wernick et al. uses Kuhn's paradigms to examine the SE discipline and found evidence that supports a Kuhnian perspective, with an established DM as an important indicator \citep[p. 240]{Wernick:2004}. By analysing a number of textbooks and conducting interviews, Wernick et al. identified 20 beliefs present in both the theoretical and practical world [ibid.], supporting ``the existence of an underlying belief system for SE'' [ibid., p. 241].
 
 The finding is interesting because it indicates that the existence of a common DM, establishes SE as a paradigm. Since paradigms and their inherent rules and exemplars are incommensurable, there can be no way of discussing or debating the concepts within the paradigm without using the DM and exemplars of that paradigm.
 
-\subsection{SE and computer ethics}
-Moor presents the idea of computer ethics (CE) in the subject of computer technology \citep{Moor:1985}. Since the development of computers and computer technology provides us with new capabilities, a policy and conceptual vacuum will appear, which, Moor argues, should be addressed by computer ethics [ibid.]. The viewpoint is interesting because it allows traditional theories on moral and ethics to be applied to computer technology, as if the technology is an ethical actor itself \citep{Floridi:1999}. In the words of Floridi:
+\subsection{Ethics}
+Holm defines ethics and morals as the ``unwritten rules that regulate our coexistence with other people'' \citep[p.205]{Holm:2014}. Ethics can be seen as the implied rules we have been taught to judge what is \textit{right} and what is \textit{wrong}. In scientific areas ethics are important because it can serve as a guideline for practical science, especially when the subjects are animals or human beings [ibid.]. Ethical conventions are also relevant in the case of technological breakthroughs, where new and unseen conflicts could present themselves [ibid.].
+
+There are several traditions within the moral philosophy such as Kant's \textit{ethics of disposition} or \textit{virtue ethics}, but for this essay I have chosen utilitarianism as the main ethical theory. Utilitarianism is sufficiently simple and 'fair' in treating both sides of an argument, and it is able to cover a large part of the arguments I wish to bring into this essay. There are, however, some caveats, as I will discuss in section \ref{Discussion}.
+
+\subsubsection{Utilitarianism}
+To act rational as a autonomous actor can be defined as choosing the \textit{best} option out of several, that gives the actor most of what he or she wants \footnote{By this definition 'wanting' is subjective to the actor.} \citep[p. 232]{Gilje:2007}. Utilitarianism extends this model and states that rational actors will always seek to maximise the utility for the people involved, given the available knowledge \citep[p. 232]{Holm:2014, Gilje:2007}. Maximising happiness (as an example of a utility) can then be seen as an ethical 'guideline', where
 \begin{quote}
-``There has been a fundamental blind spot in our ethical discourse, which ... CE seems to be able to perceive and take into account [ibid., p. 55-56].
+``the action that is morally right is the one that results in the greatest possible utility'' \citep[p. 207]{Holm:2014}.
 \end{quote}
+
+\subsubsection{SE and computer ethics} \label{Theory:Ethics}
+In 1989 Moor presents the idea of computer ethics (CE) in the subject of computer technology \citep{Moor:1985}. Since the development of computers and computer technology provides us with new capabilities, a policy and conceptual vacuum will appear, which, Moor argues, should be addressed by computer ethics [ibid.]. The viewpoint is interesting because it allows traditional theories on moral and ethics to be applied to computer technology, as if the technology is an ethical actor itself \citep{Floridi:1999}. In the words of Floridi:
+\begin{quote}
+``There has been a fundamental blind spot in our ethical discourse, which ... CE seems to be able to perceive and take into account'' [ibid., p. 55-56].
+\end{quote}
+
 While the field of CE is not as established as some of the older ethical traditions \footnote{For instance Floridi claims that CE can be understood as an object-oriented ontologically centered tradition, which is an interesting, but somewhat bold claim that I am not sure Moor would share \citep{Floridi:1999}.}, it might help us, as the quote above hints, to establish some ethical `guidelines' when working with automated (and autonomous) processes  \citep{Jensen:2014}.
 
-\subsection{Case analysis: Debate on privacy}
-In the raft sketch from the introduction the problem is, of course, that the two actors constantly talks past each other; they do not speak about the same things, or, in the terms of Kuhn, act within the same disciplinary matrix \citep{Holm:2014}. The raft sketch illustrates the consequences of claiming that SE can be seen as a paradigm: no one can engage in a discussion about the ideas of SE without understanding its DM.
+\section{Analysis}
+By including the debate on privacy this analysis sets out to explain the difficulties in communication using the above mentioned theoretical frameworks. By including Wernick et al. I will analyse the case by viewing SE as a paradigm, with exemplars and DM. And by using utilitarianism and CE I will see the arguments as a product of simple rationality and utility maximisation. 
 
-In the debate where the Danish politician discussed surveillance with a Danish blogger (representing the technical community), the blogger starts by stating that 3.5 billion recordings of internet traffic has been made in the past few years. The blogger uses this figure to demand that the laws on logging are revised, but neither his number nor his claim are being commented by the politician. The blogger claims the politician does not understand the severity of the situation and resorts to calling her alienated and stupid. The politician sets the critique aside as a personal and irrelevant attack, and continues to motivate her own viewpoints.
+\subsection{The case: Debate on privacy}
+The debate itself is chosen for its brevity (only three minutes), its simple yet relevant topic and its participants. It centres around the Danish implementation of an EU-directive about registering internet traffic and telecommunications \citep{Retsinfo:Logning}, which has recently been criticised because the European Court of Justice ruled the EU-directive unconstitutional \citep{EC:2014}. On one side stands a Danish politician, who has actively participated in numerous IT political discussions in the past. She is arguing to keep the current law. On the other hand stands a blogger who has actively participated in the public debate in favour of open data and public transparency.
 
-Seeing SE as a paradigm explains the lack of communication between the politician and the blogger. The fact that the blogger uses terms and numbers from his own DM, means that it is impossible for the politician to understand and discuss, because she is not a part of the same paradigm.
+There are a number of elements in the case I will avoid to include in the analysis. Political strategies, rhetorical tricks or similar circumstances, whether conscious or subconscious, is outside the scope of this analysis. I will only treat matters that are being mentioned by the participants and that concerns SE either directly or indirectly. 
 
-In a previous clash with the technology community, the same politician argued that a service called Tor should be banished by law.
+\subsubsection{Case analysis: Paradigms}
+In the raft sketch from the introduction the problem is, of course, that the two actors constantly talks past each other; they do not speak about the same things, or, in the terms of Kuhn, act within the same disciplinary matrix \citep{Holm:2014}. The raft sketch illustrates the consequences of claiming that SE can be seen as a paradigm: no one can engage in a discussion about the ideas of SE without understanding its DM. In practical terms this means understanding the basis and reasoning of the counterparts argument.
 
-In another perspective the case can be understood in the light of ethics. If we assume that the hacker is arguing from the viewpoint of utilitarian information ethics, where open and public data is healthy and good, his argument makes sense; for him doing `good' means maximising the freedom for as many as possible. On the other hand the argument of the politician is that the police uses the data to capture criminals, which must be for the good of the society, and which justifies a minor reduction in freedom. 
+In the debate the blogger states that the civil rights of the Danes are being violated by the 3.5 billion recordings of internet traffic, that have been collected in the last few years. The blogger uses this figure to demand that the laws on logging are revised, but neither his number nor his claim are being commented by the politician. On the opposite, the politician argues that the digital technologies, such as a credit card, is a benefit for the citizens and that records of these logs are used by the police and other authorities to prevent terror.
 
-There is an interesting common denominator in the \textit{rationality} of the CE perspective, which cannot be found with paradigms.
+Seeing SE as a paradigm would explain the miscommunication by claiming that the politician is unable to relate her ideas to the given numbers and ideas. In fact, if one stops to think, it is very rare to encounter numbers as large as 3.5 billion. It is a hideously large number, and to fully comprehend the size (not to mention the technical implications \footnote{It is not trivial to securely store 3.5 billion units of data from various sources, and make them available for multiple internal analyses.}), is not straightforward. Paradigms is then able to explain the miscommunication because the methodology and DM is not understood by both parties.
+ 
+After being ignored, the blogger moves on to claim that the politician does not understand the severity of the situation, calling her alienated and stupid and reiterating the logs are violating privacy. The politician sets the critique aside as a personal and irrelevant attack, and continues to motivate her own viewpoints.
+
+The conversation is clearly derailing. Frustration leads the blogger to resort to personal attacks which only serves to further distance the politician from the blogger. The is entirely in line with the incommensurability of paradigms; if the politician does not understand the DM, they are incapable of reaching agreement because they are not talking the same language: the conversation is bound to be derelict. 
+
+I can then conclude that paradigms are able to explain at least part of why there were so many misunderstandings in the debate. But paradigms does not offer any solutions to this gordian knot, which leads us to an interesting implication: the consequence of viewing SE as a paradigm makes it impossible to have any meaningful dialogue about `technology' outside SE.
+
+\subsubsection{Case analysis: Ethics}
+Looking at ethics and utilitarianism we can, because we are no longer operating within scientific fields and paradigms, apply utilitarianism to any discussion, scientific or not.
+If we analyse the debate from the viewpoint of the blogger, he should try to maximise the \textit{utility} for as many as possible. In this debate that means maximising freedom and minimising surveillance. His repeated argument about logging being a violation of civil rights fits nicely into this understanding.
+
+For the politician the immediate assumption would be for her maximize her chance to get re-elected. In this situation it could then amount to simply making sure that the viewers see her as skilled, confident and knowing, so they may consider voting for her in the future. By referring to technologies like the credit cards she states that she knows something the blogger/expert does not. This meets the goal of being knowledgeable. By meeting the personal critique with openness and using it as a stepping stone to deliver her own points, she appears trustworthy and confident.
+
+In comparison with the theory on paradigms a common denominator for the two debaters can actually be found in this CE analysis. Suddenly the only distinction between the two participants revolves around which utility they wish to maximise. 
+
+But, if their arguments are so simple, why are there still so much confusion? It should be fairly easy for both parties to grasp the meaning and utility value of the other and respond to that. But instead they talk past each other, only briefly touching the underlying arguments. While the ethical arguments are able to explain each actor and his or her arguments within the rationalities of utilitarianism, CE cannot explain the fundamental misunderstanding in the debate. This puts the theory of ethics in a dilemma: If individuals are rational, but cannot explain the relations between actors, how can ethics contribute with meaning in such a discussion?
 
 \section{Discussion} \label{Discussion}
-Discuss caveats of utilitarianism.
-Normal science.
+% TODO: Can we not discuss technology?
+Before beginning the discussion there are a number of potential sources of errors to address. As mentioned I have deliberately avoided looking into politics, rhetorical and communications in the analysis. There are a number of hypothetical circumstances that could potentially undermine the entire analysis above. To mention a few: there is a not insignificant chance that the debate was deliberately being derailed by one of the participants to further a personal or political goal. Second, the communication between the two participants did not take place in a physical location, so some of it could be caused by the sheer physical distance.
 
-Wernick: The analysis also shows that there the field of SE can be further divided into schools of beliefs, 
+There are undoubtedly many more problems that have been overlooked, but, as stated in the introduction, the goal of this analysis was not to test which philosophical theory is `best' or most valid, but rather to find out to what extent the theories of paradigms and utilitarianism can be used to explain the field of SE in a way, that could help the surrounding world interact with it. I have then chosen to ignore these difficulties primarily because they are irrelevant for the conclusions of the analysis but also due to the scope of the essay. 
 
-Development of Kuhn's paradigms. ``Kuhn went from seeing paradigms as dogmas ... to paradigms as exemplars'' \citep[p. 49]{Banville:1989}.
+More critical to the validity of the analysis, however is the amount of empirical data. A three minutes long interview is hard to base any conclusion on. If the efforts here were to be expanded, this would be an important source of error to remove. Even though the scope severely reduces the weight of the conclusion, I still believe it might provide some tentative steps for people who wish to communicate to and from the field of SE.
+\\
+\\
+Utilitarianism is a very simple theory that can prove easy to apply, but not without problems. Because of its simplicity it might fail to take seemingly irrational factors into account. As an example the politician could have been forced to follow the policies given by her party, instead of just saying what she believes maximises her position the most. Such intentional sabotage might explain the missing dialogue between the two.
 
-Hirscheim: "it was not possible to relate systems development methodologies to paradigms in this article" \citep[p. 1214]{Hirschheim:1989}.
+Apart from being simple, the theory might not be desirable to apply to all areas of SE. For instance an unbiased use of the utilitarian idea in its purest form, could lead to rules that ``benefit the interests of the majority of people at the expense of ... minorities'' \citep[p. 205]{Holm:2014, McKinnon:2008}. It is not hard to imagine that this could lead to ethically challenging situations, where a few would have to suffer for `the greater good'.
+\\
+\\
+The use of Kuhn's paradigms is not without challenges either. The idea of a paradigm have evolved over time, and the term has undergone ``five distinguishable phases'' \citep[p. 49]{Banville:1989}. For simplicity I have chosen to follow the definition in \cite{Holm:2014}, but it would be interesting to further examine the consequences of applying the different definitions.
+ 
+\cite{Banville:1989} also mentions that SE is a very fragmented field that is hard to understand with a monistic model \citep[p. 58]{Banville:1989}. Wernick et al. refers to a text by \cite{Hirschheim:1989}, who divides the field of SE into four separate paradigms and concludes their paper by stating that ``it was not possible to relate systems development methodologies to paradigms'' \citep[p. 1214]{Hirschheim:1989}. This is a serious blow to the idea of seeing SE as a single paradigm. However, as \cite{Wernick:2004} writes the paradigm theory was intended to be descriptive, not normative \citep[p. 239]{Wernick:2004}. In this context I find the use justified because SE as a paradigm is used in very general terms, without references to the narrow theoretical definitions that differ in the respective sub-paradigms.
+
+Finally it is interesting that while paradigms explains the misunderstandings, it does not offer any remedy the situation. It would be most discomforting to rule out any broader understanding of SE in the general society, but if it proved to be true, the only solution to this would be to educate the entire population in the DM of SE. And it is perhaps not as far-fetched as it sounds: Currently courses on IT is rising in popularity and many schools and institutions are creating specialised lines for SE. Compared with a more simple view of utilitarianism however, this is much less favourable because of the very distant prospects.
 
 \section{Conclusion}
-In this paper I have shown that...
-By analysing and discussing the question from the perspective
-of philosophy of science I have ...
+In this essay I have analysed a debate between a politician and an IT expert in the light of Kuhn's theory on paradigm and (computer) ethics. By attempting to understand the debate from the two theoretical perspectives, I have shown that the misunderstandings that surfaced in the debate could at least partially be explained by theories within philosophy of science. This leads to the conclusion that the field of philosophy of science might aid to bring about a broader understanding of SE, not only in scientific discussions, but also in common situations and discussions. 
 
-% TODO: Teori fra Moor og Wernick op i teoriafsnittet?
-% TODO: SE or IS? What is the difference?
-
+Because we cannot predict the exact consequences of new technologies and their implementation, this understanding becomes increasingly important, and the vastly growing amount of technology in our daily lives only stresses this fact. Given this growth, the most obvious challenge for the future is twofold: To continue developing philosophical theories and methodologies for analysing this ethical vacuum presented by \cite{Moor:1985}, but also continue working to bridge the gap between these ethical discourses and the practical policies and implementations. If the theories proves incomprehensible to the majority of the population, the current evolution can have severe negative moral consequences.
+\pagebreak
 \bibliography{references}
 
 \end{document}

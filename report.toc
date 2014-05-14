@@ -1,0 +1,14 @@
+\contentsline {section}{\numberline {1}Introduction}{3}
+\contentsline {section}{\numberline {2}Theory}{4}
+\contentsline {subsection}{\numberline {2.1}Software engineering as a field}{4}
+\contentsline {subsection}{\numberline {2.2}Paradigms}{4}
+\contentsline {subsubsection}{\numberline {2.2.1}SE as a paradigm}{5}
+\contentsline {subsection}{\numberline {2.3}Ethics}{6}
+\contentsline {subsubsection}{\numberline {2.3.1}Utilitarianism}{6}
+\contentsline {subsubsection}{\numberline {2.3.2}SE and computer ethics}{6}
+\contentsline {section}{\numberline {3}Analysis}{7}
+\contentsline {subsection}{\numberline {3.1}The case: Debate on privacy}{7}
+\contentsline {subsubsection}{\numberline {3.1.1}Case analysis: Paradigms}{8}
+\contentsline {subsubsection}{\numberline {3.1.2}Case analysis: Ethics}{9}
+\contentsline {section}{\numberline {4}Discussion}{10}
+\contentsline {section}{\numberline {5}Conclusion}{12}
